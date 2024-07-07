@@ -1,0 +1,447 @@
+
+/* カスタムスタイルを追加 */
+.index_btn {
+  gap: 0 7rem;
+}
+.index_btn .btn:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+}
+.nav-header a {
+  padding: 0 1rem;
+  /* width: calc(100% / 8); */
+  align-items: center;
+}
+.header_img {
+    margin-right: 1.1rem;
+    border-radius: 5px;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(80%);
+}
+.top-btn {
+    @apply inline-block text-center no-underline border-none rounded-lg cursor-pointer m-2;
+    width: 300px; /* 必要に応じて最大幅を設定 */
+    padding: 80px 0;
+    font-size: 32px; /* フォントサイズも大きくする */
+    font-weight: bold;
+    text-align: center;
+    text-shadow: #000 1px 0 5px;
+    border-radius: 10px;
+    background-blend-mode: exclusion;
+    background-color: rgb(255 255 255 / 28%);
+    display: inline-block;
+  }
+#dinein {
+  display: none;
+}
+#takeout {
+  display: none;
+}
+.btn-primary {
+    @apply bg-blue-500 text-white;
+}
+
+.btn-secondary {
+
+    color: white;
+    background-image: url('../storage/image/gyumeshi_takeaway.png');    
+    /* background-image: url('/img/gyumeshi_takeaway.png'); 画像のパス */
+    background-size: cover; /* 画像をボタンサイズに合わせる */
+    background-position: center; /* 画像を中央に配置 */
+    background-blend-mode: exclusion;
+}
+
+.btn-dinein {
+  background-color: rgb(255 255 255 / 28%);
+  color: white;
+  background-image: url(../storage/image/gyumeshi_dinein.png);
+  background-size: cover;
+  background-position: center;
+
+}
+
+/* 既存のスタイル */
+* {
+  box-sizing: border-box;
+}
+.body {
+  background: #fff;
+  width: 100%;
+  /* aspect-ratio: 5 / 3; */
+  position: relative;
+  margin: 0 auto;
+}
+.main {
+  padding: 5rem 0;
+}
+.footer {
+
+}
+.left-up {
+  overflow-y: auto;
+}
+.btn-zan {
+  padding: 2rem;
+}
+.btn-zan:hover {
+  box-shadow: 0 5px 10px #ccc;
+  transform: translate(0, -2px);
+}
+.btn-all-can {
+  padding: 2rem;
+}
+.btn-all-can:hover {
+  box-shadow: 0 5px 10px #ccc;
+  transform: translate(0, -2px);
+}
+.btn-amount {
+  letter-spacing: .5rem;
+  padding: 4rem;
+}
+.btn-amount:hover {
+  box-shadow: 0 5px 10px #ccc;
+  transform: translate(0, -2px);
+}
+.left-bottom-list {
+  display: flex;
+  justify-content: space-between;
+}
+.left-bottom-bar span {
+  padding: .2rem .5rem;
+  border: 1px solid #fff;
+  margin-right: .5rem;
+
+}
+.left-bottom-bar {
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+  padding: .5rem 0 .6rem;
+}
+.left-bottom-list-item {
+  width: 50%;
+  padding: 0 3%;
+}
+.left-bottom-list-item:first-child {
+  border-right: 1px solid #222;
+}
+.amount_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.amount_price {
+  font-size: 2.5rem;
+  text-align: right;
+}
+.left-up {
+  margin-right: .5rem;
+}
+.item_list dd {
+  font-size: 1.6rem;
+  padding: .5rem 1.5rem .5rem .5rem;
+  margin-left: .5rem;
+}
+.menu_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 2rem 1.5rem;
+}
+.menu_title{
+  font-size: 1.15rem;
+  font-weight: bold;
+  margin-top: 1.25rem;
+  width: 50%;
+}
+.menu_list_item {
+  width: calc((100% - 3rem) / 3);
+  display: flex;
+  z-index: 2;
+  align-items: flex-start;
+  border-radius: .5rem;
+  flex-wrap: wrap;
+}
+
+.menu_list_item img:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+}
+
+.menu_list_item a {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.menu_text_box {
+  width: calc(100% - 130px - 1.5rem);
+  padding-right: 1.5rem;
+}
+.payment_select .menu_text_box {
+  width: 100%;
+  padding-right: 0;
+}
+.payment_select .menu_title {
+  margin-top: 0;
+  width: 100%;
+  font-size: .85rem;
+}
+.menu_title_box {
+  width: calc(100% - 100px - 1.5rem);
+}
+.menu_price{
+  margin-top: .5rem;
+
+}
+.items-center:hover {
+  cursor: pointer;
+}
+.menu_list_item:hover {
+  cursor: pointer;
+}
+.menu_img {
+  margin-right: 1.5rem;
+  border-radius: 5px;
+  height: auto;
+}
+.menu_list_item.first-item {
+
+}
+.menu_list_item.first-item a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+.menu_list.option_menu_list:after {
+  content: "";
+  width: calc((100% - 2rem) / 3);
+  display: block;
+  order: 1;
+}
+.menu_list.option_menu_list {
+  width: 100%;
+  margin: 0 auto;
+}
+.setmenu_form {
+  display: flex;
+  gap: 1rem 1rem;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  /* width: calc((100% - 3rem) / 3); */
+}
+.option_menu_list .setmenu_form {
+  width: calc((100% - 3rem) / 3);
+}
+.option_menu_list .menu_list_item {
+  background-color: #eee;
+  padding: 0 0 1.5rem;
+ justify-content: center;
+ width: 100%;
+}
+
+.option_menu_list .menu_list_item .menu_allergies {
+  background-color: #eee;
+}
+.option_menu_list .menu_list_item.first-item .menu_allergies {
+  background-color: #fefade;
+}
+.option_menu_list .menu_list_item a {
+  display: block;
+  text-align: center;
+}
+.option_menu_list .menu_list_item.first-item {
+  padding: 0;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 5rem;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.option_menu_list .menu_list_item.first-item:hover {
+  transform: translate(0, 0);
+  box-shadow:none;
+}
+.option_menu_list .menu_list_item.first-item .option_first_menu_title_wrap {
+  width: calc(55% - 8rem);
+  align-items: center;
+}
+.option_menu_list .menu_list_item.first-item .option_first_menu_title {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+}
+.option_menu_list .menu_list_item.first-item .option_first_menu_allergy {
+  margin-top: 2rem;
+}
+.option_menu_list .menu_list_item.first-item img {
+  width: 45%;
+  height: auto;
+  margin-right: 8rem;
+}
+.option .menu_title {
+  width: 100%;
+}
+.miso_soup_wrap {
+  width: 100%;
+}
+.miso_soup_wrap .menu_list {
+  margin-bottom: 5rem;
+  justify-content: center;
+}
+.miso_soup_wrap .menu_list h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.sidemenu_wrap .menu_list h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.payment_select {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.menu_list_left {
+  width: 48.5%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem 0;
+  margin-top: 3rem;
+}
+.menu_list_left li {
+  width: 48.5%;
+}
+.menu_list_left li a {
+  display: flex;
+  width: 100%;
+  height: 9rem;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: #fff;
+  border: 5px solid #eee;
+  border-radius: 5px;
+}
+.menu_list_left li a:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+}
+.menu_list_left li a img {
+  width: 80px;
+  height: auto;
+  max-height: 60px;
+  object-fit: contain;
+  margin-bottom: .3rem;
+}
+.menu_list_right {
+  width: 48.5%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem 0;
+  margin-top: 3rem;
+}
+.menu_list_right li {
+  width: 48.5%;
+}
+.menu_list_right li a {
+  display: flex;
+  width: 100%;
+  height: 9rem;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: #fff;
+  border: 5px solid #eee;
+  border-radius: 5px;
+}
+.menu_list_right li a:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+}
+.menu_list_right li a img {
+  width: 80px;
+  height: auto;
+  max-height: 60px;
+  object-fit: contain;
+  margin-bottom: .3rem;
+}
+.payment_btn {
+  width: 48.5%;
+  text-align: center;  
+}
+.payment_btn a {
+  display: block;
+  width: 100%;
+  height: 5rem;
+  line-height: 5rem;
+  background-color: #eee;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.payment_btn.left a {
+  background-color: #f26d6d;
+}
+.payment_btn.right a {
+  background-color: rgb(123, 170, 224);
+}
+.payment_btn:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+}
+.payment_wrap {
+  display: block;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+.payment_wrap .payment_list {
+  width: 48.5%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #222;
+}
+.receipt_wrap {
+  width: 100%;
+  max-width: 30rem;
+  border: 1px solid #222;
+  padding: 4rem;
+  word-break: break-all;
+  margin: 0 auto;
+  text-align: center;
+}
+.receipt_wrap h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #222;
+  padding: .5rem .8rem;
+  display: inline-block;
+  margin: 0 auto 2rem;
+  letter-spacing: .5rem;
+}
+.total_amount {
+  font-size: 1.5rem;
+}
+.menu_allergies {
+  font-size: .85rem;
+  padding: .05rem .3rem;
+  background-color: #fefade;
+  margin-right: .1rem;
+}

@@ -3,8 +3,8 @@
 <head>
     <meta charset='utf-8' />
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-    <link href="{{ asset('storage/css/app-BYuY8CgT.css') }}">
-    <link href="{{ asset('storage/css/style.css') }}">
+    <link href="{{ asset('css/app-BYuY8CgT.css') }}">
+    <link href="{{ asset('css/style.css') }}">
     {{-- @vite('resources/css/app.css') --}}
 </head>
 

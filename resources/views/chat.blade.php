@@ -5,7 +5,6 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <link href="{{ asset('css/app.css') }}">
     <link href="{{ asset('css/style.css') }}">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
     {{-- @vite('resources/css/app.css') --}}
 </head>
 

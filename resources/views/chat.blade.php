@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8' />
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-    <link href="{{ asset('css/app-BYuY8CgT.css') }}">
+    <link href="{{ asset('css/app.css') }}">
     <link href="{{ asset('css/style.css') }}">
     {{-- @vite('resources/css/app.css') --}}
 </head>
@@ -16,7 +16,7 @@
       <form method="POST">
       <div class="flex w-full justify-center items-end flex-col my-3.5">      
       @csrf
-        <div class="mx-auto relative lg:w-full xl:w-1/2 w-2/4 md:w-full text-center">
+        <div class="mx-auto relative lg:w-full xl:w-full w-full md:w-full text-center">
           <textarea rows="5" cols="100" name="sentence" class="w-full bg-gray-100 bg-opacity-50 rounded focus:ring-2 focus:ring-blue-200 focus:bg-transparent border border-gray-300 focus:border-blue-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mx-3.5 my-4">{{ isset($sentence) ? $sentence : '' }}</textarea>
           <button class="mx-auto inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg" type="submit">Button</button>
         </div>
